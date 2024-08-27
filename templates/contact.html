@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #e0f7fa; 
+    }
+    .contact-header {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #0288d1;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
+    .contact-section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      animation: slideIn 0.5s ease-out;
+    }
+    .contact-section h4 {
+      font-size: 1.75rem;
+      color: #01579b;
+      margin-bottom: 1rem;
+    }
+    .contact-section p {
+      font-size: 1.125rem;
+      color: #00796b;
+    }
+    .contact-icon {
+      color: #0288d1; 
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .contact-icon:hover {
+      color: #01579b;
+      transform: scale(1.1);
+    }
+    .contact-info {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: #004d40;
+    }
+    .contact-info b {
+      font-weight: 600;
+    }
+    .contact-info a {
+      color: #0288d1;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #01579b;
+      transform: scale(1.1);
+    }
+    .social-icons a {
+      color: #0288d1;
+      font-size: 2rem;
+      margin-right: 1rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #01579b;
+      transform: translateY(-5px);
+    }
+    .contact-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .contact-list li {
+      margin-bottom: 1rem;
+      font-size: 1.125rem;
+      transition: background-color 0.3s ease, padding-left 0.3s ease;
+    }
+    .contact-list li:hover {
+      background-color: #f0f4f8;
+      padding-left: 1rem;
+    }
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary custom-navbar">
+    <div class="container">
+        <a class="navbar-brand mx-auto" href="#">Health Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/developer">Developer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <div class="container my-5">
+    <div class="text-center mb-5">
+      <h1 class="contact-header">Contact Us</h1>
+      <p class="lead">Have questions or need assistance? We're here to help!</p>
+    </div>
+
+    <div class="contact-section">
+        <h4><i class="bi bi-headset contact-icon"></i>Customer Support</h4>
+        <ul class="contact-list">
+          <li>I am personally available to assist you with any inquiries or issues you may have.</li>
+          <li>Whether it's a technical question, feedback, or a general inquiry, I'm just a message away.</li>
+        </ul>
+      </div>
+      
+
+    <div class="contact-section">
+      <h4><i class="bi bi-envelope contact-icon"></i>Get in Touch</h4>
+      <p>Feel free to reach out to us via email or through the contact form below. We value your feedback and are committed to providing you with the best possible experience.</p>
+      <ul class="contact-list">
+        <li>
+          <b>Email:</b> 
+          <a href="mailto:singhmansibal@gmail.com" class="text-decoration-none" target="_blank">singhmansibal@gmail.com</a>
+        </li>
+        <li>
+          <b>Phone:</b> 
+          <a href="tel:+917042930540" class="text-decoration-none">+91 7042930540</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text-center mt-4">
+      <h4><i class="bi bi-share contact-icon"></i>Stay Connected</h4>
+      <p class="lead">Stay up-to-date with the latest news, updates, and health tips by following us on social media.</p>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">© 2024 Manshi Singh</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" stroke="#000000" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+        
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                  <svg class="bi" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46471 1.0662C8.63794 1.01266 9.01258 1 12 1C14.9874 1 15.362 1.01266 16.5352 1.0662C17.7061 1.1196 18.5057 1.30556 19.2054 1.57751C19.9288 1.85858 20.5422 2.2347 21.1537 2.84623C21.7653 3.45779 22.1414 4.07123 22.4225 4.79454C22.6944 5.49426 22.8804 6.29385 22.9338 7.46471C22.9873 8.63798 23 9.01258 23 12C23 14.9874 22.9873 15.362 22.9338 16.5353C22.8804 17.7061 22.6944 18.5057 22.4225 19.2054C22.1414 19.9288 21.7653 20.5422 21.1537 21.1537C20.5422 21.7653 19.9288 22.1414 19.2054 22.4225C18.5057 22.6944 17.7061 22.8804 16.5352 22.9338C15.362 22.9873 14.9874 23 12 23C9.01258 23 8.63794 22.9873 7.46471 22.9338C6.29385 22.8804 5.49426 22.6944 4.79454 22.4225C4.07123 22.1414 3.45775 21.7653 2.84623 21.1537C2.23466 20.5422 1.85858 19.9287 1.57746 19.2054C1.30552 18.5057 1.1196 17.7061 1.06615 16.5353C1.01262 15.362 1 14.9874 1 12C1 9.01254 1.01262 8.63798 1.06615 7.46471C1.1196 6.29385 1.30552 5.49426 1.57746 4.79454C1.85858 4.07123 2.23466 3.45779 2.84623 2.84623C3.45775 2.2347 4.07123 1.85858 4.79454 1.57751C5.49426 1.30556 6.29385 1.1196 7.46471 1.0662ZM16.4449 3.04608C15.285 2.99316 14.9371 2.98198 12 2.98198C9.06284 2.98198 8.71496 2.99316 7.55501 3.04608C6.48257 3.09503 5.90008 3.27423 5.51247 3.42487C4.99906 3.62442 4.63259 3.86278 4.24768 4.24773C3.86278 4.63263 3.62437 4.99906 3.42482 5.51252C3.27423 5.90013 3.09503 6.48257 3.04608 7.55506C2.99316 8.71496 2.98198 9.06288 2.98198 12C2.98198 14.9371 2.99316 15.285 3.04608 16.4449C3.09503 17.5174 3.27423 18.0999 3.42482 18.4875C3.62437 19.0009 3.86278 19.3674 4.24768 19.7523C4.63259 20.1372 4.99906 20.3756 5.51247 20.5751C5.90008 20.7257 6.48257 20.905 7.55506 20.9539C8.71479 21.0068 9.06262 21.018 12 21.018C14.9373 21.018 15.2852 21.0068 16.4449 20.9539C17.5174 20.905 18.0998 20.7257 18.4874 20.5751C19.0009 20.3756 19.3674 20.1372 19.7523 19.7523C20.1372 19.3674 20.3755 19.0009 20.5751 18.4875C20.7257 18.0999 20.9049 17.5174 20.9539 16.4449C21.0068 15.285 21.018 14.9371 21.018 12C21.018 9.06288 21.0068 8.71496 20.9539 7.55506C20.9049 6.48257 20.7257 5.90013 20.5751 5.51252C20.3755 4.99906 20.1372 4.63263 19.7523 4.24768C19.3674 3.86278 19.0009 3.62442 18.4874 3.42487C18.0998 3.27423 17.5174 3.09503 16.4449 3.04608ZM8.33329 12C8.33329 14.025 9.97495 15.6667 12 15.6667C14.025 15.6667 15.6667 14.025 15.6667 12C15.6667 9.97495 14.025 8.33333 12 8.33333C9.97495 8.33333 8.33329 9.97495 8.33329 12ZM6.35131 12C6.35131 8.88032 8.88032 6.35136 12 6.35136C15.1196 6.35136 17.6486 8.88032 17.6486 12C17.6486 15.1197 15.1196 17.6486 12 17.6486C8.88032 17.6486 6.35131 15.1197 6.35131 12ZM17.8718 7.44816C18.6008 7.44816 19.1918 6.8572 19.1918 6.12818C19.1918 5.39915 18.6008 4.8082 17.8718 4.8082C17.1428 4.8082 16.5518 5.39915 16.5518 6.12818C16.5518 6.8572 17.1428 7.44816 17.8718 7.44816Z" fill="#3F3F46"/>
+                  </svg>
+                </a>
+              </li>
+
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="facebook" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 3.47059V20.5294C22 20.9194 21.845 21.2935 21.5692 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47056C3.08053 22 2.70648 21.8451 2.43069 21.5693C2.15491 21.2935 1.99997 20.9194 1.99997 20.5294V3.47059C1.99997 3.08056 2.15491 2.70651 2.43069 2.43073C2.70648 2.15494 3.08053 2 3.47056 2H20.5294C20.9194 2 21.2935 2.15494 21.5692 2.43073C21.845 2.70651 22 3.08056 22 3.47059V3.47059ZM7.88232 9.64706H4.94115V19.0588H7.88232V9.64706ZM8.14703 6.41176C8.14858 6.18929 8.10629 5.96869 8.02258 5.76255C7.93888 5.55642 7.81539 5.36879 7.65916 5.21039C7.50294 5.05198 7.31705 4.92589 7.1121 4.83933C6.90715 4.75277 6.68715 4.70742 6.46468 4.70588H6.41173C5.95931 4.70588 5.52541 4.88561 5.20549 5.20552C4.88558 5.52544 4.70585 5.95934 4.70585 6.41176C4.70585 6.86419 4.88558 7.29809 5.20549 7.61801C5.52541 7.93792 5.95931 8.11765 6.41173 8.11765V8.11765C6.63423 8.12312 6.85562 8.0847 7.06325 8.00458C7.27089 7.92447 7.46071 7.80422 7.62186 7.65072C7.78301 7.49722 7.91234 7.31346 8.00245 7.10996C8.09256 6.90646 8.14169 6.6872 8.14703 6.46471V6.41176ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7798 9.77345C13.2576 10.0397 12.8142 10.4383 12.4941 10.9294H12.4117V9.64706H9.64703V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.368 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z" stroke="#000000" stroke-linejoin="round"/>
+                </symbol>
+              </svg>
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"></script>
+</body>
+</html>
